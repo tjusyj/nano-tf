@@ -1,0 +1,32 @@
+./configure --prefix=/home/tjusyj/nano/InforNES/SDL-1.2/SDLlib --disable-video-nanox \
+                    --disable-video-qtopia \
+            --disable-video-photon \
+            --disable-video-direct \
+            --disable-video-ggi \
+            --disable-video-svga \
+            --disable-video-aalib \
+            --disable-video-dummy \
+            --disable-video-dga \
+            --enable-video-fbcon \
+            --disable-arts \
+            --disable-esd \
+            --disable-alsa \
+            --disable-video-x11 \
+            --disable-nasm \
+            --disable-debug \
+            --disable-joystick-amigaos \
+            --disable-joystick-beos \
+            --disable-joystick-bsd \
+            --disable-joystick-darwin \
+            --disable-joystick-dc \
+            --disable-joystick-linux \
+            --disable-joystick-macos \
+            --disable-joystick-mint \
+            --disable-joystick-win32 \
+            --disable-joystick \
+            --disable-input-tslib \
+            --host=arm-none-linux-gnueabi \
+            --build=i386
+
+
+/home/tjusyj/nano/buildroot-2017.08/output/host/bin/arm-none-linux-gnueabi-gcc -I/home/tjusyj/nano/InforNES/SDL-1.2/SDLlib/include -L/home/tjusyj/nano/InforNES/SDL-1.2/SDLlib/lib main.c -o main -lSDL

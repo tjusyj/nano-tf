@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "evdev.h": "c",
+        "lv_drv_conf.h": "c"
+    }
+}
